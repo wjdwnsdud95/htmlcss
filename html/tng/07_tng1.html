@@ -7,31 +7,72 @@
 </head>
 <body>
   <h1>회원가입을 환영합니다</h1>
-
-  <form action="">
+  <!-- from "action"은 당장 사용하지 않으면 지워준다.  -->
+  <form>
     <fieldset>
       <legend>사용자 정보</legend>
       <ul>
-        <li>아이디 <input type="text" name="id" id="id" min="4" max="10" placeholder="4자 ~ 10자 사이, 공백없이"></li>
-        <li>이메일 <input type="email" name="email" id="email"></li>
-        <li>비밀번호 <input type="password" name="password" id="password" placeholder="문자와 숫자, 특수 기호 포함"></li>
-        <li>비밀번호 확인 <input type="password" name="passwordch" id="passwordch"></li></li>
-        <li>가입 경로 <select name="accession" id="accession"><option value="0">기타</option></select></li>
-        <li>메모 <textarea name="" id="" cols="30" rows="10" placeholder="남길 말씀이 있다면 여기에"></textarea></li>
+        <!-- 코드를 보는 사람의 가독성을 위해 코드 줄이 길어지면 아래와 같이 개행하여 작성해도 된다. -->
+        <li>
+          <label for="user_id">아이디</label>
+          <input type="text"
+          name="user_id"
+          id="user_id"
+          min="4"
+          max="10"
+          placeholder="4자 ~ 10자 사이, 공백없이">
+        </li>
+        <li>
+          <label for="user_email">이메일</label>
+          <input type="email"
+          name="user_email"
+          id="user_email">
+        </li>
+        <li>
+          <label for="user_password">비밀번호</label>
+          <input type="password"
+          name="user_password"
+          id="user_password"
+          placeholder="문자와 숫자, 특수 기호 포함">
+        </li>
+        <li>
+          <label for="user_passwordchk">비밀번호 확인</label>
+          <input type="password"
+          name="user_passwordchk"
+          id="user_passwordchk">
+        </li>
+        <!-- select 태그는 name과 id가 동일해야 한다. -->
+        <li>
+          가입 경로
+          <select name="accession"
+          id="accession">
+          <option value="0">기타</option></select>
+        </li>
+        <li>
+          메모
+          <textarea name="memo"
+          id="memo"
+          cols="30"
+          rows="10"
+          placeholder="남길 말씀이 있다면 여기에"></textarea>
+        </li>
       </ul>
     </fieldset>
 
     <fieldset>
       <legend>이벤트와 새로운 소식</legend>
-
-      <input type="radio" name="emails" id="yes">
+      <!-- radio 태그를 사용할 때 name 속성 값이 다르면 제대로 작동하지 않음  -->
+      <!-- radio 태그에서 프론트엔드에서는 vlue 값을 사용하지 않지만 백엔드에서는 사용해야 한다. -->
+      <input type="radio" name="agree" id="yes">
       <label for="">메일 수신</label>
-      <input type="radio" name="emails" id="no" checked>
+      <input type="radio" name="agree" id="no" checked>
       <label for="">메일 수신 안 함</label>
       <br>
     </fieldset>
     <button type="submit">가입하기</button>
     <button type="reset">취소</button>
   </form>
+  <!-- 스네이크 기법: 단어와 단어 사이에 '_'(언더바)로 연결, 예) user_email -->
+  <!-- 카멜 기법: 연결되는 단어의 첫글자를 '대문자'로 작성, 예) userEmail -->
 </body>
 </html>
