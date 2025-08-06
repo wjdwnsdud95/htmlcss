@@ -2,6 +2,6 @@
   /* list-style-type: 불릿의 타입 설정 */
   /* list-style-type: none; */
   /* list-style-position: 목록의 들여쓰기 여부 지정 */
-  /* list-style-position: outside; */
-  list-style-image: url('../img/cat.jpg');
+   list-style-position: outside;
+  /* list-style-image: url('../img/cat.jpg'); */
 }

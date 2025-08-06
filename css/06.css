@@ -1,0 +1,73 @@
+/*
+블럭 레벨 요소
+1. 혼자 한 줄을 다 차지한다.
+2. 크기를 조절해서 위로 올라갈 공간이 충분한 것처럼 보이나 올라가지 않는다.
+3. 크기 조절은 가능하다.
+
+인라인 레벨 요소
+1. 콘텐츠 크기만큼만 크기가 고정된다.
+2. 크기 조절이 안된다.
+3. 공간이 충분하면 위로 올라온다.
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* display: inline; -> 에러 */
+}
+
+body {
+  /* padding: 10px; */
+}
+
+.div {
+  border: 1px solid #000;
+}
+
+/* .div-box {
+  block level 요소여도 inline 속성을 넣어서 변경할 수 있다.
+  display: inline;
+} */
+
+.div-box {
+  width: 100px;
+}
+
+span {
+  display: inline-block;
+  /* 100vw: 브라우저에서 보이는 영역(veiw)을 100% 사용하고 가로로 넓어진다. */
+  /* 50vh: 브라우저에서 보이는 영역을 50% 사용하고 세로로 넓어진다. */
+  width: 100vw;
+  height: 50vh;
+  padding: 5px;
+}
+
+/* vw, vh(뷰포트기준 단위): 뷰의 크기에 따라 비율로 설정 단위 */
+/* %: 부모 요소의 크기에 따라 비율로 설정 단위 */
+
+/* div의 부모 요소 */
+.div-parent {
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  /* margin: 10px auto; 사용 시 가운데로 정렬  */
+  margin: 10px auto;
+}
+
+/* div의 자식 요소 */
+.div-child {
+  border: 1px solid #e84d4d;
+  width: 50vw;
+  min-width: 400px;
+}
+
+.div-margin {
+  /* 마진 중첩: 마진을 가진 2개의 요소가 서로 중첩되면 큰 값의 마진으로 겹처진다. */
+  margin: 20px;
+  /* background-color: 배경색 */
+  background-color: #e84d4d;
+  /* box-shadow: 박스 그림자 */
+  /* 수평거리, 수직거리, 흐림정도, 번짐정도, 색상, 그림자 방향 */
+  box-shadow: 1px 1px 1px 1px #000 inset;
+}

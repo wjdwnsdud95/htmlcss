@@ -1,0 +1,16 @@
+/* <!-- ul 태그 안에 있는 모든 콘텐츠에 해당 속성의 값을 부여한다. --> */
+ul {
+  /* 불릿 없음 */
+  list-style-type: none;
+  /* 줄 간격 최상위 글자 크기 2배 */
+  line-height: 2rem;
+}
+/* html에서 span 태그에 들어간 콘텐츠에 변화를 주기 위한 속성들 */
+.wep-font-title {
+  /* 글자 크기 부모요소 1.5배 */
+  font-size: 1.5em;
+  /* 글자색 */
+  color: #ad3000;
+  /* font-weight: 폰트 굵기 조절 할 때 사용 */
+  font-weight: 900;
+}
