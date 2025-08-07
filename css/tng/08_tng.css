@@ -1,0 +1,28 @@
+div {
+  padding: 20;
+}
+
+.div-position1-box {
+  border: 1px solid #000;
+  margin-top: 30px;
+  width: 150px;
+  height: 150px;
+}
+
+.div-position2-box {
+  border: 1px solid #000;
+  width: 150px;
+  height: 150px;
+}
+
+.div-position3-box {
+  border: 1px solid #000;
+  width: 150px;
+  height: 150px;
+}
+
+.div-relative-box {
+  position: relative;
+  bottom: 100px;
+  left: 200px;
+}

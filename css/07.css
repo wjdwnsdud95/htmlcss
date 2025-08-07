@@ -1,0 +1,19 @@
+.img-float {
+  /* float: 텍스트, 사진 레이아웃 배치를 왼쪽(left) 또는 오른쪽(right)으로 변경할 수 있다. */
+  float: right;
+  /* clear: both; */
+}
+
+.nav {
+  /* list-style: 불릿 지우기 */
+  list-style: none;
+}
+
+.nav > li {
+  float: left;
+  width: 70px;
+  height: 50px;
+  background-color: #6495ed;
+  text-align: center;
+  line-height: 50px;
+}

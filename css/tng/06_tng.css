@@ -1,0 +1,75 @@
+/* box 작업할 때 아래 코드를 꼭 작성 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 전체적으로 가두는 박스 생성 */
+.container {
+  width: 600px;
+  margin: 0 auto;
+}
+
+/* header: 타입 선택자 */
+/* Header */
+header {
+  background-color: black;
+  padding: 20px;
+}
+
+/* 가정용 꿀사과 텍스트의 색상과 간격을 부여 */
+h1 {
+  color: white;
+  /* margin-bottom을 주면 h1의 콘텐츠 기준으로 아래 간격을 늘려준다. */
+  margin-bottom: 60px;
+}
+
+/* 사과를 설명하는 콘텐츠의 텍스트 색상 변경 */
+.header-info {
+  color: #ff7f00;
+}
+
+/* Main */
+.main-title {
+  padding: 10px;
+  background-color: black;
+  color: white;
+  margin-top: 10px;
+}
+
+/* main -> border 색상 */
+.main-box-base {
+  padding: 20px;
+  border: 1px solid #6d6d6d;
+  /* text-align: center: 텍스트를 중앙으로 보냄 */
+  text-align: center;
+}
+
+/* .main-contents {
+  
+}
+
+.main-counsel {
+  
+} */
+
+.main-sub-title {
+  color: red;
+  margin-bottom: 20px;
+}
+
+/* main -> span contents의 글자 강조 */
+.main-word-highlight {
+  color: blue;
+}
+
+/* main -> p contents의 글자 크기(font-size), 굵기(font-weight) */
+.main-contents-big-bold {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.main-contents-margin-bottom {
+  margin-bottom: 20px;
+}
