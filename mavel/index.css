@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.pointer:hover {
+  cursor: pointer;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+/* a 태그의 밑줄이 사라짐 */
+a {
+  text-decoration: none;
+}
+
+ul, li {
+  list-style: none;
+}
+
+/* container 영역 */
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+}
+
+/* sidebar 영역 */
+.sidebar {
+  background-color: #ff3b49;
+  color: #fff;
+}
+
+.sidebar a {
+  color: #fff;
+}
+
+h1 {
+  margin: 3rem auto;
+  text-align: center;
+  color: #fff;
+}
+
+/* 드롭박스 없는 버전 */
+.side-menu {
+  margin-bottom: 3rem;
+}
+
+.side-menu > li {
+  padding: 0.2rem 1rem;
+}
+
+.side-menu > li:nth-child(1) {
+  font-weight: 900;
+  background-color: #ff5662;
+  padding: 0.5rem 1rem;
+}
+
+.side-menu > li:not(:nth-child(1)):hover {
+  background-color: #000;
+  transition: all 1.5s;
+}
+
+.side-menu > li > a {
+  width: 100%;
+  display: inline-block;
+}
+
+/* side-menu 드롭박스 있는 버전 */
+.side-menu > h2 {
+  font-size: 1rem;
+  font-weight: 900;
+  background-color: #ff5662;
+  padding: 0.5rem 1rem;
+}
+
+.side-menu > h2 > label {
+  display: inline-block;
+  width: 100%;
+}
+
+#menu-dropbox-01-fig {
+  display: none;
+}
+
+#menu-dropbox-01-fig:checked + .menu-dropbox {
+  display: block;
+}
+
+.menu-dropbox {
+  display: none;
+}
+
+.menu-dropbox > li {
+  padding: 0.2rem 1rem;
+}
+
+.menu-dropbox > li:hover {
+  background-color: #000;
+  transition: all 1.5s;
+}
+
+.menu-dropbox > li > a {
+  display: inline-block;
+  width: 100%;
+}
+
+/* main 영역 */
+.main {
+  background-color: #e1e1e1;
+}
+
+.search-bar {
+  height: 50px;
+}
+
+.search-bar > form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 5px 1rem;
+}
+
+#search {
+  width: 80%;
+  height: 40px;
+}
+
+.btn-search-submit {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border: none;
+  border-radius: 50%;
+  background-color: #625af0;
+  font-weight: 900;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.signboard {
+  height: 300px;
+  background-image: url(./img/main_title.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* flex를 이용하여 자식 요소들 중앙 정렬 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signboard-title {
+  font-size: 3rem;
+  color: #fff;
+}
+
+.main-content {
+  padding: 15px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.card {
+  background-color: #fff;
+  padding: 1rem;
+}
+
+.card-img {
+  padding-top: 70%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* 기타 영역 */
+.btn-move-top {
+  width: 50px;
+  height: 50px;
+  background-color: #000;
+  border: none;
+  border-radius: 50%;
+  color: #fff;
+  font-weight: 900;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+}
