@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* title */
+/* 상단 타이틀 이미지 */
+.title-img {
+  height: 41vh;
+  width: 100%;
+  background-image: url(./img2/img_1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+/* 좌측 타이틀 텍스트를 묶는 박스 */
+.left-text-box {
+  width: 50%;
+  height: 100%;
+  border: 1px solid black;
+  border: none;
+  font-size: 30px;
+  padding: 8.5rem 2.5rem;
+  display: inline-block;
+  color: white;
+  position: absolute;
+}
+
+/* 상단 우측 타이틀 텍스트 */
+.right-title-text {
+  width: 50%;
+  height: 100%;
+  border: 1px solid black;
+  border: none;
+  font-size: 18px;
+  padding: 8.5rem 2rem;
+  margin-left: 30rem;
+  padding-top: 5rem;
+  display: inline-block;
+  color: white;
+  position: absolute;
+  right: auto;
+}
+
+/* 아이템으로 이동하는 버튼 */
+.btn-move-item {
+  width: 230px;
+  height: 60px;
+  font-size: 23px;
+  color: #fff;
+  background-color: goldenrod;
+  font-weight: 550;
+  border: none;
+  border-radius: 5px;
+}
+
+/* main */
+.main-content {
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 15px;
+}
+
+/* 각 아이템 전체를 묶는 클래스 */
+.main-item {
+  border: solid;
+  border-color: rgb(204, 199, 199);
+  border-radius: 10px;
+  border-width: 1px;
+  background-color: #fff;
+  padding: 2rem;
+}
+
+/* 아이템 이미지 */
+.main-item-img {
+  padding-top: 60%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* 아이템 타이틀 */
+.main-item-title {
+  padding-bottom: 18px;
+  padding-top: 18px;
+  padding-left: 18px;
+  color: white;
+  font-size: 17px;
+  background-color: black;
+  /* opacity: 0.8; */
+}
+
+/* 아이템 설명 간격 */
+.main-item-text {
+  margin-bottom: 20px;
+  margin-top: 15px;
+  line-height: 20px;
+}
+
+/* 화면 상단 타이틀 이동 버튼 */
+.btn-move-title {
+  width: 411px;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  background-color: goldenrod;
+  margin-left: 0;
+  margin-right: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  font-size: 15px;
+  font-weight: 550;
+}
+
+/* 화면 하단 타이틀 */
+.bottom-title {
+  padding: 22px;
+  width: 100%;
+  border: 1px solid #000000;
+  background-color: #332e2e;
+  color: white;
+  text-align: center;
+  font-size: 12px;
+  position: fixed;
+  bottom: 0;
+}
